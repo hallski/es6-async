@@ -22,6 +22,16 @@ const asyncFunc = makeAsync(function* () {
 asyncFunc().then(v => console.log('Finished', v))
 ```
 
+The same code written using async/await:
+```javascript
+async function asyncFunc() {
+  await timeout(1000)
+  return await random()
+}
+
+asyncFunc().then(v => console.log('Finished', v))
+```
+
 ### Caveat
 I've found one small difference that needs to be pointed out:
 

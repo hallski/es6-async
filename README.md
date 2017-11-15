@@ -48,3 +48,20 @@ In the case of `yield`, Javascript first evaluates `Promise.resolve(100) + 100` 
 const resultGen = (yield Promise.resolve(100)) + 100
 // resultGen = 200
 ```
+
+## Using with Google Cloud Functions
+```javascript
+const makeAsync = require('es6-async')
+
+const timeout = (milliseconds) => new Promise(resolve => setTimeout(resolve, milliseconds))
+const random = () => Promise.resolve(Math.random())
+
+const asyncFunc = makeAsync(function* () {
+  yield timeout(1000)
+  return yield random()
+})
+
+module.exports.randomGen = makeAsync(function*(req, res) {
+  res.status(200).send('Random value is: ' + (yield asyncFunc()))
+})
+```

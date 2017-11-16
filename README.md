@@ -5,6 +5,18 @@ Implements async/await for ES6 (specifically for Node 6.x which is the current N
 
 See [Async/Await with Generators and Promises](http://hallski.org/blog/async-await-with-generators) for a blog post about this project.
 
+## Install
+
+Using npm:
+```shell
+$ npm install --save es6-async
+```
+
+In Node.js:
+```javascript
+const makeAsync = require('es6-async')
+```
+
 ## Usage
 Write code the same way you write code with `async`/`await` with the difference to use `makeAsync` instead of the `async` keyword and replace `await` with `yield`. Also note that `makeAsync` takes a generator defined with the `function*` syntax.
 

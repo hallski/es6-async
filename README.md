@@ -10,7 +10,7 @@ See [Async/Await with Generators and Promises](http://hallski.org/blog/async-awa
 
 Using npm:
 ```shell
-$ npm install --save es6-async
+$ npm install es6-async
 ```
 
 In Node.js:

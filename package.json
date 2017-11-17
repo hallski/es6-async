@@ -1,12 +1,23 @@
 {
   "name": "es6-async",
   "version": "1.0.0",
-  "description": "",
+  "description": "Async/Await for ES6 with Generators and Promises",
   "main": "lib/index.js",
   "scripts": {
     "test": "nyc mocha"
   },
   "author": "Mikael Hallendal <hallski@hallski.org>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mhallendal/es6-async.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mhallendal/es6-async/issues"
+  },
+  "keywords": [
+    "async",
+    "es6"
+  ],
   "license": "MIT",
   "devDependencies": {
     "eslint": "^4.11.0",

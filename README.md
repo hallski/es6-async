@@ -1,4 +1,5 @@
-# es6-async ![](https://travis-ci.org/mhallendal/es6-async.svg?branch=master)
+# es6-async ![Build Status](https://travis-ci.org/mhallendal/es6-async.svg?branch=master) [![NPM version](https://img.shields.io/npm/v/es6-async.svg)](https://www.npmjs.com/package/es6-async)
+
 Async/Await for ES6 with Generators and Promises
 
 Implements async/await for ES6 (specifically for Node 6.x which is the current Node versions on the three big FaaS providers: AWS Lambda, Google Cloud Functions and Azure Functions).
